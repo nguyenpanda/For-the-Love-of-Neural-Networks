@@ -1,0 +1,8 @@
+# ninja log v5
+3	2247	1704630253227974954	CMakeFiles/Tensor.dir/Color/color.cpp.o	8140c9504ee115f3
+2	2465	1704630253447415064	CMakeFiles/Tensor.dir/Tensor/Exception/tensor_error_programing.cpp.o	12a855424f807837
+1	2606	1704630253588455753	CMakeFiles/Tensor.dir/Tensor/tensor_init.cpp.o	92fb0ee397e8eb8
+0	2756	1704630253739029292	CMakeFiles/Tensor.dir/main.cpp.o	1649ee66ae0f23dd
+1	2832	1704630253807940832	CMakeFiles/Tensor.dir/Tensor/tensor.cpp.o	b9b740f9a577fae2
+2	4781	1704630255758242920	CMakeFiles/Tensor.dir/Tensor/tensor_operators.cpp.o	6e3079f296cfcc04
+4782	4929	1704630255925498015	Tensor	35e563fe637ec9f4

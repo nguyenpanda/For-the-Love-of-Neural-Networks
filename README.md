@@ -1,4 +1,4 @@
-# Tensor
+# Neural Networks
 
 ## Getting Started
 
@@ -8,8 +8,7 @@
 
 The repository is organized as follows:
 
-- `CppLecture/`: This directory contains the individual C++ lecture files. Each lecture is stored as a separate `.cpp`
-  file for easy reference.
+- `Tensor/`: 
 - `CMakeLists.txt` file is an essential component of this C++ repository. It plays a crucial role in configuring and
   building the C++ project using CMake, a versatile build system and project configuration tool.
 
@@ -17,7 +16,7 @@ The repository is organized as follows:
 
 1. Clone this repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/
+   git clone https://github.com/nguyenpanda/For-the-Love-of-Neural-Networks
    ```
 
 ## Contribution Guidelines

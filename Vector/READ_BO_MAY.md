@@ -1,0 +1,1 @@
+Cái lày là code trước đó chục tháng, nên chưa biết cách chèn vô cái class tensor sao =)))
