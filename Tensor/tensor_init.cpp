@@ -2,6 +2,14 @@
 // Created by Hà Tường Nguyên on 12/29/23.
 //
 
+/**
+ * @file tensor_init.cpp
+ * @brief This file contains the implementation of the tensor class methods for creating and manipulating instances.
+ *
+ * @details
+ * The tensor class provides functionalities for creating, manipulating, and invisibilities.
+ */
+
 #include "tensor.h"
 
 namespace tns {

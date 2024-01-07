@@ -2,6 +2,35 @@
 // Created by Hà Tường Nguyên on 12/29/23.
 //
 
+/**
+ * @brief This file contains all useful methods for training Neural Networks
+ *
+ * @methods
+ * - display(int precision = 2, bool color = true) -> void
+ *   | Print a colorful representation of the tensor.
+ *
+ * - det() -> typename
+ *   | Calculate the determinant of the tensor.
+ *
+ * - f() -> tensor<typename>
+ *   | COMING SOON! (Provide a brief description if possible.)
+ *
+ * - multiply(const tensor<typename> &rhs_tensor) -> tensor<typename>
+ *   | Perform the Hadamard product with another tensor.
+ *
+ * - minor(size_t i, size_t j) -> tensor<typename>
+ *   | Calculate the determinant of the subTensor obtained by removing the i-th row and j-th column.
+ *
+ * - subTensor(size_t i, size_t j) -> tensor<typename>
+ *   | Create a new tensor by removing the i-th row and j-th column.
+ *
+ * - read_csv(const std::string &filename, int MAX_ROWS, int MAX_COLS, int precision = 5) -> tensor<double>
+ *   | Create a tensor from a CSV file with specified maximum rows and columns.
+ *
+ * - T() -> tensor<typename>
+ *   | Return the transpose of the tensor.
+ **/
+
 #include "tensor.h"
 
 namespace tns {
@@ -59,7 +88,7 @@ namespace tns {
         return result;
     }
 
-    //
+    // Element-wise function || COMING SOON! Use elementWise() instead!
     template<typename type>
     tensor<type> tensor<type>::f() {
         return tensor<type>(1, 2);
@@ -137,7 +166,7 @@ namespace tns {
         std::ifstream file(filename);
 
         if (!file.is_open()) {
-            std::string message = "Error opening file (tns::tensor::read_csv()): " + filename;
+            std::string message = "\nError opening file (tns::tensor::read_csv()): " + filename;
             throw std::runtime_error(message);
         }
 
@@ -169,7 +198,10 @@ namespace tns {
     // Transpose
     template<typename type>
     tensor<type> tensor<type>::T() {
+        #pragma clang diagnostic push
+        #pragma ide diagnostic ignored "ArgumentSelectionDefects"
         tensor<type> result(_cols, _rows);
+        #pragma clang diagnostic pop
 
         for (int i = 0; i < _rows; ++i) {
             for (int j = 0; j < _cols; ++j) {
