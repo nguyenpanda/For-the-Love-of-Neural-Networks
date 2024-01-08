@@ -214,10 +214,12 @@ namespace tns {
         /**
          * @brief Displays the tensor on the standard output.
          *
-         * This function prints the tensor to the standard output, allowing customization of the display format.
-         * The precision parameter determines the number of decimal places to display (default is 2). Additionally,
+         * This method prints the tensor to the standard output, allowing customization of the display format.
+         *
+         * @details
+         * - The precision parameter determines the number of decimal places to display (default is 2). Additionally,
          * the color parameter, when set to true (default), highlights the tensor values using a color scale.
-         * The color scale divides the range between Max_value and Min_value into 7 segments, ranging from
+         * - The color scale divides the range between Max_value and Min_value into 7 segments, ranging from
          * White < Magenta < Cyan < Blue < Green < Yellow < Red.
          *
          * @param precision The number of decimal places to display (default is 2).

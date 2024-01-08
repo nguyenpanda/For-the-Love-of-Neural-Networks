@@ -36,7 +36,7 @@ void test_0() {
 }
 
 void test_1() {
-    std::string fileCSV = "/test.csv";
+    std::string fileCSV = "/Users/hatuongnguyen/NguyenLibrary/Neural Networks/CSVFile/test.csv";
 
     tns::tensor<double> X;
 
